@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: yellow;
     
 }
 main{
@@ -168,3 +169,72 @@ top: 20px;
     position: relative;
     bottom: 10px;
 }
+
+/* media queries */
+ @media only screen and (max-width:688px) {
+    main{
+        margin: 35px 16px 35px 16px;
+    }
+    header{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .hero-image img{
+    position: absolute;
+    width: 257px;
+    height: 257px;
+    left: 51px;
+    top: 130px;
+    order: 1;
+    }
+    .header-contents{
+        order: 2;
+        width: 404px;
+height: 222px;
+    }
+    .header-contents h2{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+        margin-bottom: 40px;
+    }
+    .header-contents p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    }
+
+    /* Products-styles */
+
+    .products-tiles{
+        position: relative;
+        left: 0;
+font-weight: 600;
+font-size: 16px;
+    color: #3A3A3A;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 360px;
+height: 211px;
+
+background: #0A0826;
+    }
+    .footer-tile h3{
+        color: brown;
+
+    }
+    .footer-tile h3{
+        font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+color: white;
+    }
+ }
